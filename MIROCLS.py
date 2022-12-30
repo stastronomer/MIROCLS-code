@@ -1,5 +1,5 @@
 import split_spitzer_data
-import cluster_searcher_2
+import cluster_searcher
 
 
 print("\n \n----Mid-IR OPTICS CLuster Search (MIROCLS)---- \n \n Masterarbeit @Akash Gupta @European Southern Observatory @Ludwig Maximilians University, Munich\n \n")
