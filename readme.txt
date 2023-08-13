@@ -1,5 +1,8 @@
 ###
 
+
+Install dependencies: pip install -r requirements.txt
+
 MIROCLS: Mid-IR Optics CLuster Search
 This code searches for clusters in a 2-D data using density based algorithm OPTICS:
 Ordering Points To Identify Clustering Structure.
