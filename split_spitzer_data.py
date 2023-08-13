@@ -1,23 +1,18 @@
-try:
-  import numpy as np
-  import matplotlib.pyplot as plt
-  import math
-  import os
-  import pandas as pd
-  from astropy.io import fits
-  import csv
-  from astropy.table import Table
-  from matplotlib import colors
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+import os
+import pandas as pd
+from astropy.io import fits
+import csv
+from astropy.table import Table
+from matplotlib import colors
+from sklearn.cluster import DBSCAN, KMeans, MiniBatchKMeans, OPTICS
+from sklearn import metrics
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+import matplotlib
+from sklearn.neighbors import NearestNeighbors
 
-  from sklearn.cluster import DBSCAN, KMeans, MiniBatchKMeans, OPTICS
-  from sklearn import metrics
-  from sklearn.preprocessing import StandardScaler, MinMaxScaler
-  import matplotlib
-  from sklearn.neighbors import NearestNeighbors
-
-except ModuleNotFoundError:
-  print("Some modules not installed, use: pip install <module-name>, critical modules: \
-          sklearn, astroquery, matplotlib, astropy")
 
 '''
 This code will split the input data (as fits file) into smaller tiles of mentioned size or into $1deg^2$ tiles

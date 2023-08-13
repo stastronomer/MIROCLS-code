@@ -1,28 +1,24 @@
-try:
-    from astroquery.vizier import Vizier as Vizier
-    import astropy.units as u
-    import astropy.coordinates as coord
-    import numpy as np
-    import pandas as pd
-    import matplotlib.pyplot as plt
-    from astropy.io import fits
-    import warnings
-    warnings.filterwarnings("ignore")
-    from astropy.coordinates import SkyCoord
-    import io
-    import requests
-    from astropy.table import Table
-    from PIL import Image
-    import requests
-    from io import BytesIO
-    from mpl_toolkits.axes_grid1 import make_axes_locatable
-    from matplotlib import gridspec
-    from matplotlib.patches import Circle
-    import os
+from astroquery.vizier import Vizier as Vizier
+import astropy.units as u
+import astropy.coordinates as coord
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from astropy.io import fits
+import warnings
+warnings.filterwarnings("ignore")
+from astropy.coordinates import SkyCoord
+import io
+import requests
+from astropy.table import Table
+from PIL import Image
+import requests
+from io import BytesIO
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+from matplotlib import gridspec
+from matplotlib.patches import Circle
+import os
 
-except ModuleNotFoundError:
-    print("Some modules not installed, use: pip install <module-name>, critical modules: \
-          sklearn, astroquery, matplotlib, astropy, PIL")
 
 print("Input the csv file")
 file = input()
